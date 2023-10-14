@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="index2.css">
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .container-zam{
+            padding-top: 150px;
+           justify-content: center;
+           display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: blue;
+            opacity: 1;
+           transition: all 0.7s;
+           transition: filter 0.7s;
+        }
+       
+        .container-zam .zam-h1 h1{
+            font-size: 30px;
+            color: white;
+            text-transform: capitalize;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+       
+
+
+
+/*the subscribtion container*/
+.foolah{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.foolah1 {
+    position: relative;
+    bottom: 20px;
+}
+.foolah1 h4{
+    text-transform: capitalize;
+}
+@media screen and (max-width:600px){
+    .foolah{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       
+    }
+}
+.foolah1-form form{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+
+}
+form input{
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+.address-second{
+  margin: 20px 10%;
+  font-family: sans-serif;
+}
+.address-second fieldset legend{
+  color: blue;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.itunes{
+  margin: 20px 10%;
+  font-family: sans-serif;
+}
+.itunes p{
+  color: gray;
+}
+.itunes h2{
+  text-transform: capitalize;
+}
+
+.follow{
+  margin: 20px 10%;
+  font-family: sans-serif;
+}
+.follow h4{
+  text-transform: capitalize;
+}
+.follow p{
+  color: gray;
+}
+
+
+        
+    </style>
+</head>
+<body>
+  <div class="navbar ">
+    <em><img src="img/call11.png" alt="">MARK</em>
+    <ul> <li><a href="home.html">home</a></li>
+       <li><a href="about.html">about</a></li>
+        <li><a href="service.html">serivce</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="blog.html">blog</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <span class="btn"><img src="img/call6.png" alt=""></span>
+        <button class="btn-2">get intourch</button>
+    </ul>
+</div>
+
+    <header>
+    <div class="container-zam">
+      <div class="zam-h1">
+          <h1>contact us agently and lets do busineess</h1>
+          <h4>taking your brand to next level is our priority.</h4>
+      </div>
+    </div>
+
+
+
+    <!--the window scroll top body-->
+<button onclick="topFunction()" id="alBtn" title="Go to top"><img src="img/icon31.png" alt=""></button>
+
+      <!--the popup navigatio-->
+ <div class="popup-container active">
+    <div class="solo">
+             <a href="home.html">home</a>
+              <a href="about.html">about</a>
+              <a href="service.html">service</a>
+              <a href="portfolio.html">portfolio</a>
+              <a href="blog.html">blog</a>
+              <a href="contact.html">contact</a>
+      <button id="subs">get intourch</button>
+    </div>
+    <div class="close-icon">
+      <img src="img/icon19.png" alt="hola">
+    </div>
+  </div>
+
+
+</header>
+
+
+  <!--the popup container 2 in the popup box bro-->
+  <div class="popup-contain active">
+    <div class="pops">
+      <!--subscribe container bro-->
+     <div class="fuse">
+      <div class="fuse1">
+        <h2>leave us a comment</h2>
+        <em>if you need us agently</em>
+      </div>
+      <div class="fuse1-form">
+        <form action="#">
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" placeholder="Enter your E-mail">
+        </div>
+        <div>
+          <label for="comment">comment</label>
+         <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="leave ypur comment..."></textarea>
+        </div>
+        <button type="submit" id="formu-btn">subscribe►</button>
+        </form>
+      </div>
+     </div>
+    </div>
+    
+    <div class="close-sticker">
+      <img src="img/icon19.png" alt="hola">
+    </div>
+  </div>
+     
+    <br><br>
+    <div class="bottom-container">
+
+     <div class="address-second">
+       <h2>OUR ADDRESS.</h2>
+        <fieldset><legend>You Can Meet Us</legend>
+          <span>location: west africa ghana</span><br>
+          <span>zip-code: +233</span><br>
+          <span>cellphone-number: +233249489353</span><br>
+          <span>email: alw98079@gmail.com</span><br>
+          <span>digital-address: NY-0025-9095</span><br>
+          <span>house-number: BLK37 nayilifong street</span>
+        </fieldset>
+      </div>
+    </div>
+
+    <div class="itunes">
+        <h2>lets chat at anytime on these apps</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nostrum autem aspernatur eveniet tempora asperiores amet eligendi cumque consectetur, atque, iure perspiciatis</p>
+        <img src="img/icon10.png" alt="">
+        <img src="img/icon9.png" alt="">
+        <img src="img/icon40.png" alt="">
+    </div>
+
+   
+    <!--subscribe container bro-->
+    <div class="foolah-top">
+      <div class="foolahtop-child">
+      <h2>suscribe to this channel</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, error fugit. Necessitatibus consequatur debitis voluptate vitae nesciunt id similique repellat atque alias earum illum</p>
+      </div>
+     </div>
+   <div class="foolah">
+    <div class="foolah1">
+      <h2>join our community</h2>
+      <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nobis cumque ipsam illo pariatur doloremque sequi dolor totam, incidunt</em>
+    </div>
+
+    <div class="foolah1-form">
+      
+      <form name="myform" onsubmit="return myFun()" action="formcontainer.php" method="post">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="Dope_Name" name="firstname" placeholder="Enter your name"><br><br>
+          <span id="dope"></span>
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="Enter your E-mail"><br><br>
+        <span id="emailloc"></span>
+      </div>
+      <div>
+       <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="leave your comment..."></textarea>
+        <span id="emailloc"></span>
+      </div>
+      <button type="submit" id="form-btn">subscribe►</button>
+      </form>
+      
+    </div>
+   </div>
+    </main>
+
+
+    <!--the footer contents container-->
+    <footer>
+      <div class="foolia">
+      <div class="foolia11">
+        <li><img src="img/call11.png" alt="">MARK</li>
+      <u><h3>my-name is al-wahab</h3></u>
+      <p>i come from gushegu where i was born and raised.. bro it, ok.! I can just stop chasing my goals i had been through alot that me</p>
+      </div>
+      <div class="foolia22">
+        <ul>
+          <h4>home</h4>
+          <a href="#"><li>about us</li></a>
+          <a href="#"><li>contact us</li></a>
+          <a href="#"><li>blog page</li></a>
+          <a href="#"><li>service page</li></a>
+          <a href="#"><li>projects page</li></a>
+        </ul>
+        <ul>
+          <h4>service</h4>
+          <li>web design</li>
+          <li>web development</li>
+          <li>html emails</li>
+          <li>version controle</li>
+          <li>tearching</li>
+          etc
+        </ul>
+        <ul>
+          <h4>our address</h4>
+          <li>E-mail: vapalle12@gmail.com</li>
+          <li>phone: +233249489353</li>
+          <li>block17 main street road New York</li>
+        </ul>
+      <div class="itunes">
+      <h4>follow-us</h4>
+      <img src="img/iconw.png" alt="">
+      <img src="img/icon48.png" alt="">
+      <img src="img/icon58.png" alt="">
+      <img src="img/icon63.png" alt="">
+      </div>
+      </div>
+      </footer>
+      <div class="copyright"><p>copyright © All Rights Reserved Designed by Al-Wahab.2023</p></div>
+
+    <script>
+
+      // the navigation bar functions bro
+     const navbarEl = document.querySelector(".navbar");
+     const bottomContainerEl = document.querySelector(".bottom-container");
+    
+     console.log(navbarEl.offsetHeight)
+
+       console.log(bottomContainerEl.offsetTop);
+     window.addEventListener("scroll", () =>{
+        if(window.scrollY > bottomContainerEl.offsetTop - navbarEl.offsetHeight - 50){
+            navbarEl.classList.add("active")
+        }else{
+            navbarEl.classList.remove("active")
+        }
+     })
+
+
+      //the alert popup button funtion
+      const containerEl = document.querySelector(".container-zam");
+    const btnEl = document.querySelector(".btn");
+    const popupContainerEl =document.querySelector(".popup-container");
+    const closeIconEl = document.querySelector(".close-icon");
+
+    btnEl.addEventListener("click", ()=>{
+      containerEl.classList.add("active");
+      popupContainerEl.classList.remove("active");
+    });
+
+    closeIconEl.addEventListener("click", ()=>{
+      containerEl.classList.remove("active");
+      popupContainerEl.classList.add("active");
+    });
+
+
+    //the window scroll button
+let albutton= document.getElementById("alBtn")
+			
+      window.onscroll = function(){scrollFunction()};
+      function scrollFunction(){
+         if(document.body.scrollTop > 20 || 
+         document.documentElement.scrollTop > 20){
+           albutton.style.display = "block";
+          }else{
+             albutton.style.display = "none";
+          }
+      }
+       function topFunction(){
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+       }
+
+
+
+       //the second popup function bro
+     let containEl = document.querySelector(".container-zam");
+     let btn2El = document.querySelector(".btn-2");
+     let popupContainEl =document.querySelector(".popup-contain");
+     let cleanIconEl = document.querySelector(".close-sticker");
+ 
+     btn2El.addEventListener("click", ()=>{
+       containEl.classList.add("active");
+       popupContainEl.classList.remove("active");
+     });
+ 
+       cleanIconEl.addEventListener("click", ()=>{
+       containEl.classList.remove("active");
+       popupContainEl.classList.add("active");
+     });
+    </script>
+</body>
+</html>

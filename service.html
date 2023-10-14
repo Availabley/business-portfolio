@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service page</title>
+   <link rel="stylesheet" href="index2.css">
+    <style>
+        body{
+            margin: 0;
+        }
+        .container-zam{
+           padding-top: 150px;
+           justify-content: center;
+           display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: blue;
+        }
+        .container-zam .zam-h1 h1{
+            font-size: 30px;
+            color: white;
+            text-transform: capitalize;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        /*the pricing container*/
+        .pricing{
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+           align-items: center;
+            gap: 1rem;
+        }
+        @media screen and (max-width:600px){
+            .pricing{
+               display: inline-block;
+               padding-left: 120px;
+               
+            }
+        }
+         .price{
+            background-color: lightgreen;
+            border-radius: 10px;
+            color: white;
+            font-family: sans-serif;
+            width: 200px;
+            box-shadow:  0 4px 6px rgb(0, 0, 0, .2);
+        }
+        .price h2{
+            text-align: center;
+            color: green;
+        
+        }
+        .price ul{
+            list-style-type: none;
+            font-size: 15px;
+            font-family: sans-serif;
+            text-transform: capitalize;
+            margin: 10px;
+            color: rgb(29, 113, 141);
+            padding-bottom: 15px;
+        }
+         #price-btn{
+           padding: 20px 64px;
+            font-size: 20px;
+            border: none;
+            text-transform: capitalize;
+            border-radius: 10px;
+            background-image: linear-gradient(green,white);
+            color: white;
+
+        }
+       
+
+ /*all the service text contents*/
+.start {
+    margin: 20px 10%;
+    font-family: sans-serif;
+}
+.start p{
+    color: gray;
+}
+.start h4{
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+.start22{
+    margin: 20px 10%;
+    font-family: sans-serif;
+}
+.start22 h4{
+    text-transform: capitalize;
+}
+.start22 p{
+    color: gray;
+}
+.work{
+  margin: 20px 10%;
+  font-family: sans-serif;
+}
+.work h4{
+    text-transform: capitalize
+}
+.work p{
+    color: gray;
+}
+.talks{
+  margin: 20px 10%;
+  font-family: sans-serif;
+}
+.talks h2{
+  text-transform: capitalize;
+}
+.talks p{
+    color: gray;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar ">
+      <em><img src="img/call11.png" alt="">MARK</em>
+        <ul> <li><a href="home.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+              <li><a href="service.html">serivce</a></li>
+              <li><a href="portfolio.html">portfolio</a></li>
+              <li><a href="blog.html">blog</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <span class="btn"><img src="img/call6.png" alt=""></span>
+              <button class="btn-2">get intourch</button>
+          </ul>
+    </div>
+    
+    <div class="container-zam">
+      <div class="zam-h1">
+          <h1>get to know everthing about our service</h1>
+          <h4>enjoy it with 100% feedback..</h4>
+      </div>
+    </div>
+
+       <!--the window scroll top body-->
+<button onclick="topFunction()" id="alBtn" title="Go to top"><img src="img/icon31.png" alt=""></button>
+
+
+    <!--the popup navigatio-->
+    <div class="popup-container active">
+        <div class="solo">
+          <a href="home.html">home</a>
+          <a href="about.html">about</a>
+          <a href="service.html">service</a>
+          <a href="portfolio.html">portfolio</a>
+          <a href="blog.html">blog</a>
+          <a href="contact.html">contact</a>
+              <button id="subs">get intourch</button>
+        </div>
+        <div class="close-icon">
+          <img src="img/icon19.png" alt="hola">
+        </div>
+      </div>
+
+
+      <!--the popup container 2 in the popup box bro-->
+   <div class="popup-contain active">
+    <div class="pops">
+      <!--subscribe container bro-->
+     <div class="fuse">
+      <div class="fuse1">
+        <h2>leave us a comment</h2>
+        <em>if you need us agently</em>
+      </div>
+      <div class="fuse1-form">
+        <form action="#">
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" placeholder="Enter your E-mail">
+        </div>
+        <div>
+          <label for="comment">comment</label>
+         <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="leave ypur comment..."></textarea>
+        </div>
+        <button type="submit" id="formu-btn">subscribe►</button>
+        </form>
+      </div>
+     </div>
+    </div>
+    
+    <div class="close-sticker">
+      <img src="img/icon19.png" alt="hola">
+    </div>
+  </div>
+     
+    <div class="bottom-container">
+
+        <div class="start">
+            <h4>hi my name is al-wahab</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sint odit quibusdam sunt ea totam, qui provident ab vero maiores id labore neque reprehenderit ratione fugit cumque eveniet at laboriosam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium neque consectetur, quis vel laborum quod voluptatibus, minus vero magni incidunt fuga veritatis, dolore voluptas placeat! Adipisci incidunt fugiat veniam tenetur.</p>
+        </div>
+    </div>
+
+    <main>
+  
+        <div class="start22">
+         <h4>the tools i use in the presents of building website</h4>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat harum, animi officiis odit modi officia quisquam neque blanditiis ab pariatur est aspernatur fuga doloremque, quam debitis enim. Ea, placeat amet?</p>
+         <ul>
+            <li>HTML5/CSS3</li>
+            <li>JAVASCRIPT</li>
+            <li>PHP</li>
+            <li>WORDPRESS</li>
+            <li>photoshop</li>
+            <li>FIGMA</li>
+         </ul>
+         <h4>what i can build with the tools</h4>
+         <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur ad beatae nihil odio. Exercitationem molestias assumenda impedit voluptatem sapiente atque reprehenderit, ad sunt modi autem a quam ratione dicta est?</P>
+         <ol>
+            <li>Responsive inter faces</li>
+            <li>Form validation both client and server side</li>
+            <li>Alert popup boxes or smooth scroll</li>
+            <li>Toggle navigation bar</li>
+         </ol>
+        </div>
+       
+        <div class="work">
+            <h4>why work with me</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore unde cupiditate commodi illo ex fugiat recusandae praesentium repudiandae expedita. Recusandae sequi quis asperiores nemo dolore atque voluptatem dolorum quasi culpa!</p>
+           </div>
+            <div class="talks">
+            <h2>flexable pricing..</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam odio dignissimos porro molestias deserunt incidunt eos quisquam blanditiis, laboriosam non magnam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde quisquam mollitia minus. Fugiat veritatis nesciunt delectus eum asperiores ipsa quasi totam accusamus quod iusto provident in, aliquam similique dicta.</p>
+           </div>
+
+         <div class="pricing">
+           <div class="price">
+           <button id="price-btn">basic price..</button>
+           <h2>1000$</h2>
+           <ul>
+            <li>►portfolio-site</li>
+            <li>►landing-page</li>
+            <li>►html e-mails</li>
+            <li>►teaching site</li>
+            <li>►business site</li>
+            <li>►blog post</li>
+            <li>►portfolio-site</li>
+            <li>►landing-page</li>
+            <li>►html e-mails</li>
+            <li>►teaching site</li>
+            <li>►business site</li>
+            <li>►blog post</li>
+           </ul>
+     </div>
+     </div>
+
+
+
+      
+    <!--subscribe container bro-->
+    <div class="foolah-top">
+      <div class="foolahtop-child">
+      <h2>suscribe to this channel</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, error fugit. Necessitatibus consequatur debitis voluptate vitae nesciunt id similique repellat atque alias earum illum</p>
+      </div>
+     </div>
+   <div class="foolah">
+    <div class="foolah1">
+      <h2>join our community</h2>
+      <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nobis cumque ipsam illo pariatur doloremque sequi dolor totam, incidunt</em>
+    </div>
+
+    <div class="foolah1-form">
+      
+      <form name="myform" onsubmit="return myFun()" action="formcontainer.php" method="post">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="Dope_Name" name="firstname" placeholder="Enter your name"><br><br>
+          <span id="dope"></span>
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="Enter your E-mail"><br><br>
+        <span id="emailloc"></span>
+      </div>
+      <div>
+       <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="leave your comment..."></textarea>
+        <span id="emailloc"></span>
+      </div>
+      <button type="submit" id="form-btn">subscribe►</button>
+      </form>
+      
+    </div>
+   </div>
+         
+    </main>
+
+
+   
+
+
+<!--the footer contents container-->
+<footer>
+  <div class="foolia">
+  <div class="foolia11">
+    <li><img src="img/call11.png" alt="">MARK</li>
+  <u><h3>my-name is al-wahab</h3></u>
+  <p>i come from gushegu where i was born and raised.. bro it, ok.! I can just stop chasing my goals i had been through alot that me</p>
+  </div>
+  <div class="foolia22">
+    <ul>
+      <h4>website</h4>
+      <a href="home.html"><li>home</li></a>
+      <a href="about.html"><li>about us</li></a>
+      <a href="lasthome.html"><li>blog page</li></a>
+      <a href="portfolio.html"><li>service page</li></a>
+      <a href="contact.html"><li>contact us</li></a>
+      <a href="service.html">service page</a>
+    </ul>
+    <ul>
+      <h4>service</h4>
+      <li>web design</li>
+      <li>web development</li>
+      <li>html emails</li>
+      <li>version controle</li>
+      <li>tearching</li>
+      etc
+    </ul>
+    <ul>
+      <h4>our address</h4>
+      <li>E-mail: vapalle12@gmail.com</li>
+      <li>phone: +233249489353</li>
+      <li>block17 main street road New York</li>
+    </ul>
+  <div class="itunes">
+  <h4>follow-us</h4>
+  <img src="img/iconw.png" alt="">
+  <img src="img/icon48.png" alt="">
+  <img src="img/icon58.png" alt="">
+  <img src="img/icon63.png" alt="">
+  </div>
+  </div>
+  </footer>
+  <div class="copyright"><p>copyright © All Rights Reserved Designed by Al-Wahab.2023</p></div>
+    <script>
+        //the nav bar functions bro
+     const navbarEl = document.querySelector(".navbar");
+     const bottomContainerEl = document.querySelector(".bottom-container");
+    
+     console.log(navbarEl.offsetHeight)
+
+       console.log(bottomContainerEl.offsetTop);
+     window.addEventListener("scroll", () =>{
+        if(window.scrollY > bottomContainerEl.offsetTop - navbarEl.offsetHeight - 50){
+            navbarEl.classList.add("active")
+        }else{
+            navbarEl.classList.remove("active")
+        }
+     })
+
+
+      //the alert popup button funtion
+      const containerEl = document.querySelector(".container-zam");
+       const btnEl = document.querySelector(".btn");
+       const popupContainerEl =document.querySelector(".popup-container");
+       const closeIconEl = document.querySelector(".close-icon");
+   
+       btnEl.addEventListener("click", ()=>{
+         containerEl.classList.add("active");
+         popupContainerEl.classList.remove("active");
+       });
+   
+       closeIconEl.addEventListener("click", ()=>{
+         containerEl.classList.remove("active");
+         popupContainerEl.classList.add("active");
+       });
+
+
+           //the window scroll button
+let albutton= document.getElementById("alBtn")
+			
+            window.onscroll = function(){scrollFunction()};
+            function scrollFunction(){
+               if(document.body.scrollTop > 20 || 
+               document.documentElement.scrollTop > 20){
+                 albutton.style.display = "block";
+                }else{
+                   albutton.style.display = "none";
+                }
+            }
+             function topFunction(){
+               document.body.scrollTop = 0;
+               document.documentElement.scrollTop = 0;
+             }
+      
+
+              //the second popup function bro
+     let containEl = document.querySelector(".container-zam");
+     let btn2El = document.querySelector(".btn-2");
+     let popupContainEl =document.querySelector(".popup-contain");
+     let cleanIconEl = document.querySelector(".close-sticker");
+ 
+     btn2El.addEventListener("click", ()=>{
+       containEl.classList.add("active");
+       popupContainEl.classList.remove("active");
+     });
+ 
+       cleanIconEl.addEventListener("click", ()=>{
+       containEl.classList.remove("active");
+       popupContainEl.classList.add("active");
+     });
+    </script>
+</body>
+</html>

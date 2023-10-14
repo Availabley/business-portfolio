@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+    <link rel="stylesheet" href="index2.css">
+
+
+    <style>
+         body{
+            margin: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        .container-zam{
+            height: 150px;
+            padding-top: 100px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: blue;
+        }
+        .container-zam img{
+            height: 500px;
+            
+        }
+        .container-zam .zam-h1 h1{
+            font-size: 20px;
+            color: white;
+            text-transform: capitalize;
+            font-family: sans-serif;
+        }
+       
+       @media screen and (max-width:600px){
+           
+       }
+
+       .blog-zaah{
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+          margin: 30px 20%;
+       }
+       .blog-zaah div p{
+        color: gray;
+        
+       }
+       .blog-ccc{
+        width: auto;
+        font-family: sans-serif;
+        word-break: keep-all;
+        
+       }
+       .blog-ccc .blogcc-child h2{
+        color: blue;
+        text-transform: capitalize;
+       }
+       @media screen and (max-width:600px){
+        .blog-ccc{
+            width: auto;
+          margin: 30px;
+          word-break: normal;
+        }
+        .blog-zaah div p{
+           width: 400px;
+        }
+       }
+       
+       
+    </style>
+</head>
+<body>
+    
+
+    <div class="navbar ">
+      <em><img src="img/call11.png" alt="">MARK</em>
+        <ul> <li><a href="home.html">home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="service.html">serivce</a></li>
+              <li><a href="portfolio.html">portfolio</a></li>
+              <li><a href="blog.html">blog</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <span class="btn"><img src="img/call6.png" alt=""></span>
+              <button class="btn-2">get intourch</button>
+          </ul>
+    </div>
+    
+
+    <!--the popup navigatio-->
+    <div class="popup-container active">
+        <div class="solo">
+          <a href="home.html">home</a>
+          <a href="about.html">about</a>
+          <a href="service.html">service</a>
+          <a href="portfolio.html">portfolio</a>
+          <a href="blog.html">blog</a>
+          <a href="contact.html">contact</a>
+              <button id="subs">get intourch</button>
+        </div>
+        <div class="close-icon">
+          <img src="img/icon19.png" alt="hola">
+        </div>
+      </div>
+
+      
+      <!--the popup container 2 in the popup box bro-->
+   <div class="popup-contain active">
+    <div class="pops">
+      <!--subscribe container bro-->
+     <div class="fuse">
+      <div class="fuse1">
+        <h2>leave us a comment</h2>
+        <em>if you need us agently</em>
+      </div>
+      <div class="fuse1-form">
+        <form action="#">
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" placeholder="Enter your E-mail">
+        </div>
+        <div>
+          <label for="comment">comment</label>
+         <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="leave ypur comment..."></textarea>
+        </div>
+        <button type="submit" id="formu-btn">subscribe►</button>
+        </form>
+      </div>
+     </div>
+    </div>
+    
+    <div class="close-sticker">
+      <img src="img/icon19.png" alt="hola">
+    </div>
+  </div>
+
+    
+    <div class="container-zam">
+      <div class="zam-h1 h1">
+        <h1>get to know everthing about our service</h1>
+        <h4>enjoy it with 100% feedback..</h4>
+    </div>
+    </div>
+
+
+ <!--the window scroll top body-->
+ <button onclick="topFunction()" id="alBtn" title="Go to top"><img src="img/icon31.png" alt=""></button>
+
+
+  <div class="bottom-container">
+ <div class="blog-zaah">
+    <!-- the blog container -->
+    <div class="blog-ccc">
+      <div class="blogcc-child">
+        <h2>get to know everthing about our service</h2>
+        <h4>enjoy it with 100% feedback..</h4>
+    </div>
+    <!-- the table container-->
+     <div>
+         <h4>TABLE OF CONTENT</h4>  
+         <ul>
+             <li>what is wesite</li>
+             <li>what is the term web-development</li>
+             <li>who is web-developer</li>
+            <li>tipically day to day life of web-developer</li>
+            <button id="blog-m-btn"><a href="#blog3"><li>what makes website a good one</li></a></button>
+         </ul>
+     </div>
+     </div>
+     <!-- the website block explanation container-->
+     <div>
+         <h4>WHAT IS WEBSITE</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+      
+     </div>
+   <!-- the web-development block explanation container-->
+     <div class="block">
+         <div class="first-child">
+         <h4>WHAT IS THE TERM WEB-DEVELOPMENT</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, assumenda! Molestiae quod sint dolorem minima a sunt sit nihil libero voluptate consequuntur enim temporibus ullam aut, nesciunt exercitationem maxime. Ea!</p>
+          <ol>
+             <li>Web-Designer</li>
+             <li>Front-End-Developer</li>
+             <li>Back-End-Developer</li>
+             <li>Full-Stuck-Developer</li>
+          </ol>
+          </div>
+          <div class="second-child">
+            <h4>1. Web-Designer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+         </div>
+         <div class="third-child">
+            <h4>2. Front-End-Developer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+         <ul>
+             <li>HTML</li>
+             <li>CSS</li>
+             <li>JAVASCRIPT</li>
+         </ul>
+         <h4>i. HTML</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+
+
+          <h4>ii. CSS</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+
+          <h4>iii. JAVASCRIPT</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+
+           <h4>3. Back-End-Developer</h4>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+           
+           <h4>4. Full-Stuck-Developer</h4>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+         </div>
+        </div>
+     <div class="fouve-child">
+         <h3>WHO IS WEB-DEVELOPER</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+         </p>
+     </div>
+     <div class="five-child">
+      <h2>TIPICALLY DAY TO DAY LIFE OF A WEB-DEVELOPER</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+     </div>
+ 
+ 
+     <div class="sive-child" id="blog3">
+            
+         <h3>WHAT MAKES WEBSITE A GOOD ONE</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+         <ol>
+             <li>Layout</li>
+             <li>Colors</li>
+             <li>Call-to-Action (C.T.A)</li>
+             <li>Typography</li>
+         </ol>
+         <h4>1. Layout</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+
+            <h4>2. Colors</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+
+         <h4>3. Call-to-Action (C.T.A)</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+
+         <h4>4.Typography</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quia impedit voluptate est hic eligendi delectus maxime ratione ipsam odio reiciendis inventore similique dolorum totam, nemo dignissimos consequuntur neque quam.</p>
+     </div>
+ </div>
+ </div>
+   </div>
+   </div>
+
+
+   
+    <!--subscribe container bro-->
+    <div class="foolah-top">
+      <div class="foolahtop-child">
+      <h2>suscribe to this channel</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, error fugit. Necessitatibus consequatur debitis voluptate vitae nesciunt id similique repellat atque alias earum illum</p>
+      </div>
+     </div>
+   <div class="foolah">
+    <div class="foolah1">
+      <h2>join our community</h2>
+      <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nobis cumque ipsam illo pariatur doloremque sequi dolor totam, incidunt</em>
+    </div>
+
+    <div class="foolah1-form">
+      
+      <form name="myform" onsubmit="return myFun()" action="formcontainer.php" method="post">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="Dope_Name" name="firstname" placeholder="Enter your name"><br><br>
+          <span id="dope"></span>
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="Enter your E-mail"><br><br>
+        <span id="emailloc"></span>
+      </div>
+      <div>
+       <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="leave your comment..."></textarea>
+        <span id="emailloc"></span>
+      </div>
+      <button type="submit" id="form-btn">subscribe►</button>
+      </form>
+      
+    </div>
+   </div>
+         
+
+   
+ <!--the footer contents container-->
+<footer>
+  <div class="foolia">
+  <div class="foolia11">
+    <li><img src="img/call11.png" alt="">MARK</li>
+  <u><h3>my-name is al-wahab</h3></u>
+  <p>i come from gushegu where i was born and raised.. bro it, ok.! I can just stop chasing my goals i had been through alot that me</p>
+  </div>
+  <div class="foolia22">
+    <ul>
+      <h4>website</h4>
+      <a href="home.html"><li>home</li></a>
+      <a href="about.html"><li>about us</li></a>
+      <a href="lasthome.html"><li>blog page</li></a>
+      <a href="portfolio.html"><li>service page</li></a>
+      <a href="contact.html"><li>contact us</li></a>
+      <a href="service.html">service page</a>
+    </ul>
+    <ul>
+      <h4>service</h4>
+      <li>web design</li>
+      <li>web development</li>
+      <li>html emails</li>
+      <li>version controle</li>
+      <li>tearching</li>
+      etc
+    </ul>
+    <ul>
+      <h4>our address</h4>
+      <li>E-mail: vapalle12@gmail.com</li>
+      <li>phone: +233249489353</li>
+      <li>block17 main street road New York</li>
+    </ul>
+  <div class="itunes">
+  <h4>follow-us</h4>
+  <img src="img/iconw.png" alt="">
+  <img src="img/icon48.png" alt="">
+  <img src="img/icon58.png" alt="">
+  <img src="img/icon63.png" alt="">
+  </div>
+  </div>
+  </footer>
+  <div class="copyright"><p>copyright © All Rights Reserved Designed by Al-Wahab.2023</p></div>
+
+  
+  <script>
+    //the window scroll button
+       let albutton= document.getElementById("alBtn")
+			
+            window.onscroll = function(){scrollFunction()};
+            function scrollFunction(){
+               if(document.body.scrollTop > 20 || 
+               document.documentElement.scrollTop > 20){
+                 albutton.style.display = "block";
+                }else{
+                   albutton.style.display = "none";
+                }
+            }
+             function topFunction(){
+               document.body.scrollTop = 0;
+               document.documentElement.scrollTop = 0;
+             }
+
+
+
+
+             //that is the nave bar contents function
+const navbarEl = document.querySelector(".navbar");
+     const bottomContainerEl = document.querySelector(".bottom-container");
+    
+     console.log(navbarEl.offsetHeight)
+
+       console.log(bottomContainerEl.offsetTop);
+     window.addEventListener("scroll", () =>{
+        if(window.scrollY > bottomContainerEl.offsetTop - navbarEl.offsetHeight - 50){
+            navbarEl.classList.add("active")
+        }else{
+            navbarEl.classList.remove("active")
+        }
+     })
+
+  
+
+      //the alert popup button funtion
+      const containerEl = document.querySelector(".container-zam");
+       const btnEl = document.querySelector(".btn");
+       const popupContainerEl =document.querySelector(".popup-container");
+       const closeIconEl = document.querySelector(".close-icon");
+   
+       btnEl.addEventListener("click", ()=>{
+         containerEl.classList.add("active");
+         popupContainerEl.classList.remove("active");
+       });
+   
+       closeIconEl.addEventListener("click", ()=>{
+         containerEl.classList.remove("active");
+         popupContainerEl.classList.add("active");
+       });
+
+
+
+        //the second popup function bro
+     let containEl = document.querySelector(".container-zam");
+     let btn2El = document.querySelector(".btn-2");
+     let popupContainEl =document.querySelector(".popup-contain");
+     let cleanIconEl = document.querySelector(".close-sticker");
+ 
+     btn2El.addEventListener("click", ()=>{
+       containEl.classList.add("active");
+       popupContainEl.classList.remove("active");
+     });
+ 
+       cleanIconEl.addEventListener("click", ()=>{
+       containEl.classList.remove("active");
+       popupContainEl.classList.add("active");
+     });
+
+
+  </script>
+</body>
+</html>

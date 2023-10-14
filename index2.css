@@ -1,0 +1,945 @@
+body{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ /*the popup 2 contents*/
+ .popup-contain{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 500px;
+    top: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
+  }
+  
+  .popup-btn{
+    background-color: orangered;
+    font-size: 20px;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    margin: 10px;
+    border: 2px solid;
+  }
+
+  .close-sticker{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 2s;
+  }
+  .close-sticker img{
+    width: 30px;
+  }
+  .close-sticker:hover{
+    background-color: blue;
+    border-radius: 30px;
+  }
+  .active.popup-contain{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+  }
+  .pops{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    height: 200px;
+    gap: 1rem;
+  }
+  .pops a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: 2s;
+  }
+  .pops a:hover{
+    color: white;
+    background-color: green;
+  }
+
+
+
+  /*the subscribtion container in the popup container bro*/
+.fuse-top h2{
+  text-align: center;
+  padding-top: 30px;
+  font-family: sans-serif;
+}
+.btn-2{
+  padding: 15px 20px;
+  order: none;
+  background-color: orangered;
+  color: white;
+}
+.fuse-top{
+  word-spacing: -1px;
+  word-break: break-all;
+}
+.fuse{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.fuse1 {
+  position: relative;
+  bottom: 20px;
+}
+form textarea{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fuse1 h4{
+  text-transform: capitalize;
+}
+.fuse1 h2{
+    text-transform: capitalize;
+}
+@media screen and (max-width:600px){
+  .fuse{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+  }
+}
+
+.fuse1-form form{
+ display: flex;
+ flex-direction: column;
+ gap: 1rem;
+
+}
+form input{
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+
+form #formu-btn{
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: blue;
+  text-transform: capitalize;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, .3);
+  font-size: 15px;
+}
+
+
+   /* the window scroll top style*/
+   #alBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100px;
+    background-color: blue;
+  }
+  #alBtn img{
+    width: 30px;
+  }
+/*THE TEXT RUNING ROUTE*/
+.container-ff{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    align-items: center;
+    padding-top: 200px;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  @media screen and (max-width:600px){
+    .container-ff{
+        font-size: 10px;
+    }
+  }
+  .topcontainer-btn2 button{
+    padding: 10px 30px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin: 10px;
+    transition: 2s;
+  }
+  .topcontainer-btn2 #topcontainer-btn1{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+   #topcontainer-btn1:hover{
+    color: white;
+    background-color: lightgreen;
+    border-radius: 30px;
+  }
+  .topcontainer-btn2 #topcontainer-btn2{
+    border: 3px solid white;
+    background-color: transparent;
+   cursor: pointer;
+   border-radius: 5px;
+  }
+  .topcontainer-btn2 #topcontainer-btn2 a:hover{
+    color: white;
+    text-decoration: none;
+  }
+  #topcontainer-btn2:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+  }
+.top-container{
+    background: url(img/herro.jpg) no-repeat center center/cover;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 5;
+    transition: all 0.7s;
+    transition: filter 0.7s;
+   
+}
+.active.top-container{
+    filter: blur(5px) brightness(.7);
+  }
+.top-container h1{
+    padding-top: 50px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.top-container h2{
+    color: black;
+    text-shadow: 0 4px 8px rgb(0, 0, 0, .4);
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, .3);
+    transition: background-color 0.4s;
+}
+.navbar img{
+    margin-top: 30px;
+   margin-left: 30px;
+    width: 30px;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    margin: 30px;
+}
+.navbar ul .btn{
+   display: none;
+   transition: 2s;
+   cursor: pointer;
+}
+.navbar ul .btn:hover{
+    transform: scale(1.2);
+}
+.navbar ul .btn img{
+    width: 50px;
+}
+
+.navbar ul .btn-2{
+    padding: 10px 20px;
+    margin-right: 30px;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: none;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    transition: 2s;
+}
+.navbar ul .btn-2:hover{
+       background-color: lightgreen;
+       color: white;
+       border-radius: 30px;
+}
+@media screen and (max-width:600px){
+    .navbar ul .btn{
+        display: block;
+    }
+    .navbar ul .btn-2{
+        display: none;
+    }
+}
+.navbar.active{
+    background-color: blue;
+    
+}
+.navbar.active ul li a{
+    color: white;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    text-transform: capitalize;
+    padding-right: 10px;
+    color: gray;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: 2s;
+}
+@media screen and (max-width:600px){
+    .navbar ul li a{
+        display: none;
+    }
+}
+.navbar ul li a:hover{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/*the themes page container*/
+.themestop-container{
+    text-align: center;
+    font-family: sans-serif;
+}
+.gas-top2 h4{
+    text-transform: capitalize;
+    margin-top: 10px;
+    text-align: center;
+}
+.gas-top2 p{
+    text-align: justify;
+    color: gray;
+}
+.gas-top2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+ .gastop-child{
+     width: 500px;
+}
+.gastop-child p img{
+    width: 30px;
+}
+@media screen and (max-width:600px){
+    .gastop-child{
+        width: 400px;
+    }
+}
+.gas-top2 #gas-btn-box{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+#gas-btn-box #gas-top-btn{
+    padding: 20px 70px;
+    font-size: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    transition: 2s;
+
+}
+#gas-btn-box #gas-top-btn:hover{
+    background-color: lightgreen;
+    border-radius: 30px;
+}
+#gas-btn-box #gas-top-btn a{
+    color: white;
+    text-decoration: none;
+}
+ 
+.themess{
+   display: flex;
+   gap: 2rem;
+   justify-content: center;
+   margin: 30px;
+}
+.themess span h4{
+    text-transform: capitalize;
+}
+@media screen and (max-width:600px){
+    .themess{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    
+}
+.themess img{
+    width: 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+.themess span{
+   font-family: sans-serif;
+   background-color: blue;
+   box-shadow: 0 4px 8px rgb(0, 0, 0, .7);
+   color: white;
+   border-radius: 30px;
+}
+.themess span p{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    margin: 20px;
+    width: 200px;
+}
+
+/*the about me page*/
+
+.oliver{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 10px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+.oliver img{
+    width: 300px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, .4);
+    border-radius: 5px;
+}
+@media screen and (max-width:600px){
+    .oliver{
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .oliver img{
+        width: 300px;
+    }
+}
+    .oliver2{
+    width: 350px;
+}
+.oliver2 h2{
+    text-transform: capitalize;
+    font-family: sans-serif;
+    margin: 4px;
+}
+.oliver2 p{
+    font-family: sans-serif;
+    color: gray;
+    margin: 5px;
+}
+.oliver2 em{
+    margin: 5px;
+}
+#oll button{
+   padding: 10px 15px;
+   margin: 10px;
+   border: 2px solid blue;
+   font-family: sans-serif;
+   text-transform: capitalize;
+   background-color: transparent;
+   border-radius: 5px;
+   transition: 2s;
+}
+#oll button:hover{
+    color: white;
+    background-color: lightgreen;
+    border-radius: 30px;
+    border: none;
+}
+#oll button a:hover{
+    color: white;
+}
+#oll button a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+} 
+
+
+/*the products page bro asap*/
+.products-top h2{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+ }
+ .products-top h4{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+ }
+.product-second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media screen and (max-width:600px){
+.product-second{
+    display: inline-block;
+    padding-left: 120px;
+}
+}
+.product-child{
+width: 200px;
+height: auto;
+margin: 10px;
+border-radius: 10px;
+font-family: sans-serif;
+box-shadow: 0 4px 8px rgb(0, 0, 0, .3);
+}
+.product-child p, h4{
+margin:  10px;
+}
+.product-child p{
+color: gray;
+}
+.product-child #product-btn{
+margin: 10px;
+padding: 10px 15px;
+font-size: 15px;
+text-transform: capitalize;
+border: none;
+border-radius: 10px;
+color: white;
+font-family: sans-serif;
+background-color: blue;
+transition: 2s;
+}
+.product-child #product-btn:hover{
+    background-color: lightgreen;
+    border-radius: 30px;
+}
+.product-child img{
+width: 200px;
+height: 200px;
+}
+
+/*the blog contents bro*/
+.blog-page{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 13px;
+
+}
+.blogpage-child{
+    width: 600px;
+    border: 5px solid blue;
+    border-radius: 10px;
+    border-bottom: transparent;
+    border-left: transparent;
+}
+.blog-page p{
+    color: gray;
+}
+.blog-page p img{
+    width: 30px;
+}
+@media screen and (max-width:600px){
+    .blogpage-child{
+        width: 400px;
+     }
+}
+.blog-page h2{
+  text-align: center;
+  text-transform: capitalize;
+}
+.blog-page h4{
+    text-align: center;
+    text-transform: capitalize;
+  }
+.blog-page h2{
+    font-family: sans-serif;
+}
+.blog-page #blogpage-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 2s;
+}
+.blog-page #blogpage-btn a{
+    color: white;
+    text-decoration: none;
+}
+.blog-page #blogpage-btn:hover{
+    background-color: lightgreen;
+    border-radius: 30px;
+}
+ 
+/*the toggle text contents*/
+.accordion{
+    height: 65%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 30px;
+}
+.accordion .accordion-title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.accordion .content-container .quetion{
+     padding: 18px 0px;
+     font-size: 22px;
+     cursor: pointer;
+     border-bottom: 1px solid #000;
+     position: relative;
+}
+.accordion .content-container .quetion::after{
+      content: '+';
+      position: absolute;
+      right: -5px;
+}
+.accordion .content-container .answer{
+     padding-top: 15px;
+     font-size: 22px;
+     line-height: 1.5;
+     width: 100%;
+     height: 0px;
+     overflow: hidden;
+     transition: .5s;
+}
+.accordion .content-container.active .answer{
+    height: 150px;
+transition: .5s;
+}
+.accordion .content-container.active .quetion::after{
+   content: '-';
+   font-size: 30px;
+   transition: .5s;
+}	
+.accordion.content-container.active .quetion{
+font-size: 18px;
+}
+
+/*the customers satisfunctional box*/
+
+.satiss{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ @media screen and (max-width:600px){
+     .satiss .satiss33{
+         display: inline-block;
+     }
+     .satiss11{
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        margin: 20px;
+     }
+     .satiss11 img{
+        width: 50px;
+        padding-left: 40px;
+     }
+ }
+ .satiss11{
+     text-align: center;
+     width: 200px;
+ }
+ .satiss11 span{
+    color: gray;
+ }
+ .satiss11 img{
+    padding-left: 50px;
+    margin: 10px;
+ }
+ .satiss11 h4{
+     text-transform: capitalize;
+     color: gray;
+ }
+ .satiss22{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px 5px rgb(0, 0, 0, .1);
+   
+ }
+ .satiss22 em{
+     margin: 10px;
+ }
+ .satiss22 span{
+     margin: 10px;
+     font-size: 13px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     color: gray;
+ }
+ .satiss33{
+     display: flex;
+     gap: 1rem;
+     height: auto;
+ }
+ .satiss22 .satiss22-img{
+     width: 100px;
+     border-radius: 100px;
+     margin: 20px;
+ }
+ .satiss22 .satiss22-icon{
+     width: 30px;
+     margin: 10px;
+ }
+ 
+  
+
+/*the subscribtion container*/
+.foolah-top h2{
+    text-align: center;
+    padding-top: 30px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    color: blue;
+}
+
+.foolah-top{
+   display: flex;
+   margin-top: 30px;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   opacity: 0.5;
+   background: url(img/back44.jpg)no-repeat center center/cover;
+}
+.foolahtop-child{
+    width: 600px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width:600px){
+    .foolahtop-child{
+        width: 400px;
+    }
+}
+.foolah-top p{
+    color: black;
+}
+.foolah{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 50px;
+}
+.foolah1 {
+    bottom: 20px;
+    width: 200px;
+}
+.foolah .foolah1 h2{
+    text-transform: capitalize;
+}
+@media screen and (max-width:600px){
+    .foolah{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+}
+ 
+.foolah1-form form{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+  
+}
+form input{
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+form #form-btn{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+    text-transform: capitalize;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, .3);
+    font-size: 15px;
+    transition: 2s;
+}
+form #form-btn:hover{
+    background-color: lightgreen;
+    border-radius: 30px;
+}
+
+/*the footer contents bro*/
+
+.foolia{
+    display: flex;
+    gap: 1rem;
+    color: white;
+}
+
+.foolia11{
+    margin: 20px;
+}
+.foolia11 h3{
+    text-transform: capitalize;
+}
+.foolia11 li {
+    list-style-type: none;
+}
+.foolia11 p{
+    width: 300px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+.foolia22{
+    display: flex;
+}
+.foolia22 ul h4{
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+.foolia22 ul li{
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+.foolia22 ul a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+@media screen and (max-width:600px){
+    .foolia22{
+        display: inline-block;
+    }
+}
+.itunes img{
+    width: 30px;
+}
+.itunes h4{
+    text-transform: capitalize;
+    color: white;
+}
+footer{
+  background-color: black;
+   margin: 20px;
+}
+@media screen and (max-width:600px){
+    .foolia{
+        display: inline-block;
+        margin: 30px;
+    }
+}
+
+
+
+
+/*the popup dialog box*/
+
+.popup-container{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 300px;
+    top: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.3);
+  }
+  
+  #subs{
+    background-color: blue;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-transform: capitalize;
+  }
+
+  .close-icon{
+    position: absolute;
+    left: 80%;
+    color: white;
+    cursor: pointer;
+    padding-top: 10px;
+    transition: 2s;
+  }
+  .close-icon img{
+    width: 50px;
+  }
+  .close-icon:hover{
+    background-color: orange;
+    border-radius: 30px;
+  }
+  .active.popup-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+  }
+  .solo{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    height: 200px;
+    gap: 1rem;
+    border-radius: 30px;
+    text-align: justify;
+  }
+  .solo a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: black;
+    text-transform: capitalize;
+    transition: 2s;
+  }
+  .solo a:hover{
+    color: white;
+    background-color: green;
+  }
+.copyright{
+    text-align: center;
+    color: gray;
+}

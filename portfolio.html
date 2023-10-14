@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects page</title>
+    <link rel="stylesheet" href="index2.css">
+    <style>
+        body{
+            margin: 0;
+        }
+        .container-zam{
+            padding-top: 150px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: blue;
+        }
+        .container-zam .zam-h1 h1{
+            font-size: 30px;
+            color: white;
+            text-transform: capitalize;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        /*the products page bro asap*/
+.product-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.products-top{
+    text-align: center;
+}
+@media screen and (max-width:600px){
+.product-page{
+    display: inline-block;
+    padding-left: 120px;
+}
+}
+.product-child-page{
+width: 200px;
+height: auto;
+margin: 10px;
+border-radius: 10px;
+font-family: sans-serif;
+}
+.product-child-page p, h4{
+margin:  10px;
+}
+.product-child-page p{
+color: gray;
+}
+.product-child-page #product-btn{
+margin: 10px;
+padding: 10px 15px;
+font-size: 15px;
+text-transform: capitalize;
+border: none;
+border-radius: 10px;
+color: white;
+font-family: sans-serif;
+background-color: blue;
+}
+.product-child-page img{
+width: 200px;
+height: 200px;
+}
+
+
+
+/*the customers satisfunctional box*/
+
+.satisfunction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ @media screen and (max-width:600px){
+     .satisfunction .satisfunction33{
+         display: inline-block;
+     }
+     .satisfunction11{
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        margin: 20px;
+     }
+     .satisfunction img{
+        width: 50px;
+        padding-left: 7px;
+     }
+    
+ }
+ .satisfunction11{
+     text-align: center;
+     width: 200px;
+ }
+ .satisfunction p{
+    color: gray;
+ }
+ .satisfunction11 img{
+    padding-left: 50px;
+    margin: 10px;
+ }
+ .satisfunction11 h4{
+     text-transform: capitalize;
+     color: gray;
+ }
+ .satisfunction22{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px 5px rgb(0, 0, 0, .1);
+   
+ }
+ .satisfunction22 em{
+     margin: 10px;
+ }
+ .satisfunction22 p{
+    margin: 10px;
+ }
+ .satisfunction33{
+     display: flex;
+     gap: 1rem;
+     height: auto;
+ }
+ .satisfunction22 .satisfunction22-img{
+     width: 100px;
+     border-radius: 400px;
+     margin: 20px;
+ }
+ .satisfunction22 .satisfunction22-icon{
+     width: 30px;
+     margin: 10px;
+ }
+ 
+.bottom-container{
+  margin: 30px 10%;
+  font-family: sans-serif;
+  color: gray;
+}
+.bottom-container h4{
+  text-transform: capitalize;
+  color: blue;
+}
+    </style>
+</head>
+<body>
+
+    <div class="navbar ">
+      <em><img src="img/call11.png" alt="">MARK</em>
+        <ul> <li><a href="home.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+            <li><a href="service.html">serivce</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <span class="btn"><img src="img/call6.png" alt=""></span>
+            <button class="btn-2">get intourch</button>
+        </ul>
+    </div>
+    
+    <div class="container-zam">
+      <div class="zam-h1">
+          <h1>enjoy my awesome projects</h1>
+          <h4>enjoy it with 100% feedback</h4>
+      </div>
+    </div>
+
+    <div class="bottom-container">
+      <h4>what we use to build our project</h4>
+     <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae perspiciatis assumenda provident nesciunt odit similique deleniti doloribus nobis, possimus quasi rem illo laborum nam animi ex quaerat vitae voluptatum? Id aliquam incidunt, accusamus hic qui molestias iste vel, illum ullam dignissimos distinctio aliquid quos nesciunt quia in nisi omnis repellendus nobis blanditiis expedita? Deserunt!</p>
+    </div>
+
+
+          <!--the window scroll top body-->
+<button onclick="topFunction()" id="alBtn" title="Go to top"><img src="img/icon31.png" alt=""></button>
+
+
+       <!--the popup navigatio-->
+ <div class="popup-container active">
+    <div class="solo">
+      <a href="home.html">home</a>
+      <a href="about.html">about</a>
+      <a href="service.html">service</a>
+      <a href="portfolio.html">portfolio</a>
+      <a href="blog.html">blog</a>
+      <a href="contact.html">contact</a>
+      <button id="subs">get intourch</button>
+    </div>
+    <div class="close-icon">
+      <img src="img/icon19.png" alt="hola">
+    </div>
+  </div>
+
+
+   <!--the popup container 2 in the popup box bro-->
+   <div class="popup-contain active">
+    <div class="pops">
+      <!--subscribe container bro-->
+     <div class="fuse">
+      <div class="fuse1">
+        <h2>leave us a comment</h2>
+        <em>if you need us agently</em>
+      </div>
+      <div class="fuse1-form">
+        <form action="#">
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" placeholder="Enter your E-mail">
+        </div>
+        <div>
+          <label for="comment">comment</label>
+         <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="leave ypur comment..."></textarea>
+        </div>
+        <button type="submit" id="formu-btn">subscribe►</button>
+        </form>
+      </div>
+     </div>
+    </div>
+    
+    <div class="close-sticker">
+      <img src="img/icon19.png" alt="hola">
+    </div>
+  </div>
+     
+
+
+     <!--the projects contents-->
+   <div class="products-top">
+    <em>Note: they is only projects in this page</em>
+    <h4>Im available 24/7 to save you with any of your problem bro..</h4>
+    </div>
+    <div class="product-page">
+    <div class="product-child-page">
+      <img src="img/pro1.jpeg" alt="project picture">
+      <h4>Landing Page</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, vel quidem</p>
+      <button id="product-btn">check-it-out</button>
+    </div>
+
+    <div class="product-child-page">
+      <img src="img/pro2.jpeg" alt="project picture">
+      <h4>Web Application</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, vel quidem</p>
+      <button id="product-btn">check-it-out</button>
+    </div>
+    <div class="product-child-page">
+      <img src="img/pro5.jpeg" alt="project picture">
+      <h4>Blog Contents</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, vel quidem</p>
+      <button id="product-btn">check-it-out</button>
+    </div>
+    <div class="product-child-page">
+      <img src="img/pro6.jpeg" alt="project picture">
+      <h4>Our Al App</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, vel quidem</p>
+      <button id="product-btn">check-it-out</button>
+    </div>
+    </div>
+
+ <!--the second column projects contents-->
+ <div class="products-top">
+    <h2>enjoy my intuive html email templates</h2>
+    <em>Note: 2 html emails here for now 3 column and 2 column layout</em>
+    </div>
+    <div class="product-page">
+    <div class="product-child-page">
+      <img src="img/pro7.jpeg" alt="">
+      <h4>2 Column Layout</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, vel quidem</p>
+      <button id="product-btn">check-it-out</button>
+    </div>
+
+    <div class="product-child-page">
+      <img src="img/pro8.jpeg" alt="">
+      <h4>3 Column Layout</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, vel quidem</p>
+      <button id="product-btn">check-it-out</button>
+    </div>
+    </div>
+
+   
+    <!--the customers satisfuctional blog-->
+   <div class="satisfunction">
+
+    <div class="satisfunction11">
+      <h4>satisfunction</h4>
+      <img src="img/icon27.png" alt="">
+      <p>Some of my clients feedback, I recieve in my social media profiles. I work with alot of people in my community too.!</p>
+    </div>
+   <div class="satisfunction33">
+    <div class="satisfunction22">
+      <img class="satisfunction22-img" src="img/112.jpeg" alt="">
+      <em>KULAH NAA</em>
+      <img class="satisfunction22-icon"  src="img/icon6.png" alt="">
+      <P>Wow hes soo mazing to work with, i wish you give hime a try</P>
+    </div>
+    <div class="satisfunction22">
+      <img  class="satisfunction22-img" src="img/114.jpeg" alt="">
+      <em>KULAH NAA</em>
+      <img class="satisfunction22-icon" src="img/icon6.png" alt="">
+      <P>Wow hes soo mazing to work with, i wish you give hime a try</P>
+    </div>
+    </div>
+   </div>
+  
+
+       <!--subscribe container bro-->
+       <div class="foolah-top">
+        <div class="foolahtop-child">
+        <h2>suscribe to this channel</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, error fugit. Necessitatibus consequatur debitis voluptate vitae nesciunt id similique repellat atque alias earum illum</p>
+        </div>
+       </div>
+     <div class="foolah">
+      <div class="foolah1">
+        <h2>join our community</h2>
+        <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nobis cumque ipsam illo pariatur doloremque sequi dolor totam, incidunt</em>
+      </div>
+  
+      <div class="foolah1-form">
+        
+        <form name="myform" onsubmit="return myFun()" action="formcontainer.php" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="Dope_Name" name="firstname" placeholder="Enter your name"><br><br>
+            <span id="dope"></span>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="text" id="email" name="email" placeholder="Enter your E-mail"><br><br>
+          <span id="emailloc"></span>
+        </div>
+        <div>
+         <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="leave your comment..."></textarea>
+          <span id="emailloc"></span>
+        </div>
+        <button type="submit" id="form-btn">subscribe►</button>
+        </form>
+        
+      </div>
+     </div>
+ 
+
+        
+ <!--the footer contents container-->
+<footer>
+  <div class="foolia">
+  <div class="foolia11">
+    <li><img src="img/call11.png" alt="">MARK</li>
+  <u><h3>my-name is al-wahab</h3></u>
+  <p>i come from gushegu where i was born and raised.. bro it, ok.! I can just stop chasing my goals i had been through alot that me</p>
+  </div>
+  <div class="foolia22">
+    <ul>
+      <h4>website</h4>
+      <a href="home.html"><li>home</li></a>
+      <a href="about.html"><li>about us</li></a>
+      <a href="lasthome.html"><li>blog page</li></a>
+      <a href="portfolio.html"><li>service page</li></a>
+      <a href="contact.html"><li>contact us</li></a>
+      <a href="service.html">service page</a>
+    </ul>
+    <ul>
+      <h4>service</h4>
+      <li>web design</li>
+      <li>web development</li>
+      <li>html emails</li>
+      <li>version controle</li>
+      <li>tearching</li>
+      etc
+    </ul>
+    <ul>
+      <h4>our address</h4>
+      <li>E-mail: vapalle12@gmail.com</li>
+      <li>phone: +233249489353</li>
+      <li>block17 main street road New York</li>
+    </ul>
+  <div class="itunes">
+  <h4>follow-us</h4>
+  <img src="img/iconw.png" alt="">
+  <img src="img/icon48.png" alt="">
+  <img src="img/icon58.png" alt="">
+  <img src="img/icon63.png" alt="">
+  </div>
+  </div>
+  </footer>
+  <div class="copyright"><p>copyright © All Rights Reserved Designed by Al-Wahab.2023</p></div>
+    
+
+
+
+    <script>
+        const navbarEl = document.querySelector(".navbar");
+        const bottomContainerEl = document.querySelector(".bottom-container");
+       
+        console.log(navbarEl.offsetHeight)
+   
+          console.log(bottomContainerEl.offsetTop);
+        window.addEventListener("scroll", () =>{
+           if(window.scrollY > bottomContainerEl.offsetTop - navbarEl.offsetHeight - 50){
+               navbarEl.classList.add("active")
+           }else{
+               navbarEl.classList.remove("active")
+           }
+        })
+   
+
+         //the alert popup button funtion
+    const containerEl = document.querySelector(".container-zam");
+    const btnEl = document.querySelector(".btn");
+    const popupContainerEl =document.querySelector(".popup-container");
+    const closeIconEl = document.querySelector(".close-icon");
+
+    btnEl.addEventListener("click", ()=>{
+      containerEl.classList.add("active");
+      popupContainerEl.classList.remove("active");
+    });
+
+    closeIconEl.addEventListener("click", ()=>{
+      containerEl.classList.remove("active");
+      popupContainerEl.classList.add("active");
+    });
+
+
+             //the window scroll button
+let albutton= document.getElementById("alBtn")
+			
+      window.onscroll = function(){scrollFunction()};
+      function scrollFunction(){
+         if(document.body.scrollTop > 20 || 
+         document.documentElement.scrollTop > 20){
+           albutton.style.display = "block";
+          }else{
+             albutton.style.display = "none";
+          }
+      }
+       function topFunction(){
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+       }
+   
+
+        //the second popup function bro
+     let containEl = document.querySelector(".container-zam");
+     let btn2El = document.querySelector(".btn-2");
+     let popupContainEl =document.querySelector(".popup-contain");
+     let cleanIconEl = document.querySelector(".close-sticker");
+ 
+     btn2El.addEventListener("click", ()=>{
+       containEl.classList.add("active");
+       popupContainEl.classList.remove("active");
+     });
+ 
+       cleanIconEl.addEventListener("click", ()=>{
+       containEl.classList.remove("active");
+       popupContainEl.classList.add("active");
+     });
+       </script>
+
+</body>
+</html>
